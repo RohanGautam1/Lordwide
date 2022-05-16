@@ -1,28 +1,25 @@
 import React from 'react'
 import './comp1.css';
-import { FaBeer } from 'react-icons/fa';
 import { AiOutlineLeft } from "react-icons/ai";
 // AiOutlineLeft
 
-function SignIn1() {
+function Forgot() {
   return (
     <>
       <div className="container login-container my-5">
         <div className="row">
+        
           <div className="col-md-6 welcome_auth">
-            {/* Add Image here */}
+            {/* <img src="./images/bg-img.jpeg" alt="" srcset="" /> */}
           </div>
 
           <div className="offset-md-1 col-md-4 login-form">
             <div className="login_form_in">
-              <div className="auth_branding">
-                <a className="auth_branding_in" href="https://procraft.studio">XYZ</a>
-              </div>
-              <div className='fpass'>
+              <div className='Forgotpassword'>
                 <h1 className="auth_title text-left">Forgot password?</h1>
               </div>
               <form>
-                <div className="alert  border-0" role="alert">
+                <div className="alert" role="alert">
                   Enter the email address you used when you joined and we'll send you instructions to reset your password.</div>
                 <div className="form-group">
                   Your email
@@ -43,4 +40,4 @@ function SignIn1() {
   )
 }
 
-export default SignIn1
+export default Forgot
