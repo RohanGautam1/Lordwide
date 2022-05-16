@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+}
+
+.infos{
+    /* top: 510px;
+left: 1134px; */
+width: 147px;
+height: 19px;
+    text-align: left;
+letter-spacing: 0px;
+color: #7A86A1;
+opacity: 1;
+}
