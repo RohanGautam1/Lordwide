@@ -1,9 +1,13 @@
 import './App.css';
-import Forgot from './component/Forgot';
+import SignIn from './component/SignIn';
+// import Forgot from "./component/Forgot";
+
 function App() {
   return (
     <>
-      <Forgot/>
+
+      <SignIn/>
+      {/* <Forgot/> */}
     </>
   );
 }
