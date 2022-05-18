@@ -1,77 +1,86 @@
-.flex{
-    display: flex;
-}
-
-.infos{
-    /* top: 510px;
-left: 1134px; */
-width: 147px;
-height: 19px;
-    text-align: left;
-letter-spacing: 0px;
-color: #7A86A1;
-opacity: 1;
-}
-
-.forgotpassword{
-    /* top: 361px;
-left: 1132px; */
-/* width: 246px;
-height: 41px; */
-text-align: left;
-letter-spacing: -0.75px;
-color: #000000;
-opacity: 1;
+body{
+    font-family: 'Manrope', sans-serif;
 }
 
 .paragraph-text{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    letter-spacing: 0px;
+    color: #7A86A1;
+    opacity: 1;
+    font-weight: 400;
+}
 
-    text-align: left;
-letter-spacing: 0px;
-color: #7A86A1;
-opacity: 1;
+.a-color{
+
+    color: #6149CD;
+    font-weight: 500;
 }
 
 
+.forget-pass{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+}
 .email-section{
-    
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #EBEBEB;
     border-radius: 20px;
     opacity: 1;
-    
+    font-weight: 400;
+    color: #7A86A1;
+    margin-top: 3px;
 }
 
 .Submit-Button{
-
-background: transparent linear-gradient(90deg, #6149CD 0%, #A654AC 47%, #EA5F8B 100%) 0% 0% no-repeat padding-box;
-box-shadow: 4px 23px 57px #6149CD42;
-border-radius: 22px;
-opacity: 1;
+    background: transparent linear-gradient(90deg, #6149CD 0%, #A654AC 47%, #EA5F8B 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 4px 23px 57px #6149CD42;
+    border-radius: 16px;
+    opacity: 1;
+    font-weight: 700;
 }
 
 .bg-img{
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    display:block;
+padding:0 !important;
+margin:0;
 }
 .login-form{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    /* align-items: flex-start; */
+    flex-direction: column;
 }
 
 .img-txt{
-
-    margin-top: 185px;
-    margin-left: 166px;
-    margin-width: 619px;
-    margin-height: 210px;
-    /* UI Properties */
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     letter-spacing: -0.6px;
     color: #FFFFFF;
-    opacity: 1;
+    font-size: 40px;
+    padding: 2rem 0rem 0rem 4rem;
+    font-weight: 800;
+}
+
+.logo-image{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.logo-image2{
+    margin-left: 1rem;
+}
+.login-form label{
+    font-weight: 600;
+    color: #000000;
+}
+::placeholder{
+    color: #7A86A1 !important;
+    font-weight: 400;
 }
