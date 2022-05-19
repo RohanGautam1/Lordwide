@@ -1,9 +1,14 @@
 import './App.css';
-import Forgot from './component/Forgot';
+import Sidebar from './component/Sidebar';
+// import Forgot from './component/Forgot';
+
 function App() {
   return (
     <>
-      <Forgot/>
+    <div className="App">
+      {/* <Forgot/> */}
+      <Sidebar/>
+      </div>
     </>
   );
 }

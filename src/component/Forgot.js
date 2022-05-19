@@ -1,5 +1,5 @@
 import React from 'react'
-import './comp1.css';
+import '../App.css';
 import { AiOutlineLeft } from "react-icons/ai";
 import BackgroundImage from '../images/big-image.png';
 import LogoImage from '../images/logo.svg';
@@ -16,17 +16,14 @@ function Forgot() {
           <div className="col-md-6 bg-img " style={{ backgroundImage: `url(${BackgroundImage})` }}>
             <img className='logo-image' src={LogoImage} alt="logo-img" />
             <h1 className="img-txt mt-5 mb-0 ">Bring your restaurant <br /> to the next level. </h1>
-            
           </div>
-
+          
           {/* Form Start */}
           <div className="col-md-6">
 
           <div className='p-4' >
             <p className= "text-end text-decoration-none pr-0">New User? <a className="text-decoration-none a-color "href="https://www.google.com">Create an Account</a>
             <img className='logo-image2' src={LogoImage2} alt="logo-img" /></p>
-
-          
           </div>
 
             <div className="col-md-6 offset-md-3 login_form_in login-form">
