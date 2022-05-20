@@ -1,54 +1,234 @@
-.flex{
+body{
+    font-family: 'Manrope', sans-serif;
+}
+.flex {
     display: flex;
 }
 
-.infos{
+.infos {
     /* top: 510px;
 left: 1134px; */
-width: 147px;
-height: 19px;
+    width: 147px;
+    height: 19px;
     text-align: left;
-letter-spacing: 0px;
-color: #7A86A1;
-opacity: 1;
+    letter-spacing: 0px;
+    color: #7A86A1;
+    opacity: 1;
 }
 
-.fpass{
+.fpass {
     /* top: 361px;
 left: 1132px; */
-/* width: 246px;
+    /* width: 246px;
 height: 41px; */
     text-align: left;
-letter-spacing: -0.75px;
-color: #000000;
-opacity: 1;
+    letter-spacing: -0.75px;
+    color: #000000;
+    opacity: 1;
 }
 
 .divider:after,
 .divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
-}
-.h-custom {
-height: calc(100% - 73px);
-}
-@media (max-width: 450px) {
-.h-custom {
-height: 100%;
-}
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
 }
 
-.align-register{
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+.align-register {
     float: right;
 }
 
-.password-box{
- 
+
+.bg-img {
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.Submit-Button{
+    background: transparent linear-gradient(90deg, #6149CD 0%, #A654AC 47%, #EA5F8B 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 4px 23px 57px #6149CD42;
+    border-radius: 22px;
+    opacity: 1;
+}
+
+.input-field{
     background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EBEBEB;
-border-radius: 20px;
-opacity: 
-
+opacity: 1;
+letter-spacing: 0px;
+color: #7A86A1;
+opacity: 1;
+font-weight: 400;
+font-size: 0.875rem;
+width: 12.688rem;
+height: 3rem;
 }
+
+.password-field{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EBEBEB;
+opacity: 1;
+
+opacity: 1;
+font-weight: 400;
+font-size: 0.875rem;
+width: 12.688rem;
+height: 3rem;
+}
+
+.signin-font{
+font-weight: 700;
+font-size: 1.875rem;
+}
+
+.below-signin-text{
+    text-align: left;
+letter-spacing: 0px;
+color: #7A86A1;
+opacity: 1;
+font-size: 0.875rem;
+font-weight: 400;
+}
+
+.your-email{
+    text-align: left;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+font-weight: 600;
+}
+
+.password-text{
+    margin-left: 2rem;
+    text-align: left;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+font-weight: 600;
+}
+
+.create-account-text{
+    margin-bottom: 11rem;
+    margin-right: -7rem;
+}
+
+.logo-image2{
+    margin-left: 1rem;
+}
+
+.signin-button{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1; 
+  margin-left: 0.688rem; 
+  font-weight: 700;
+  width: 12.688rem;
+height: 3rem;
+}
+
+.rememberme-div{
+    margin-left: 0.50rem;   
+}
+
+.rememberme-text{
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0px;
+color: #7A86A1;
+opacity: 1;
+}
+
+.forgot-password-text{
+    color: #6149CD;
+    margin-left: 1.2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+opacity: 1;
+}
+
+.img-txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    letter-spacing: -0.6px;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    padding: 2rem 0rem 0rem 4rem;
+    font-weight: 800;
+}
+.logo-image{
+    margin-top: 30px;
+    margin-left: 15px;
+    
+}
+
+.create-account-color{
+    letter-spacing: 0px;
+color: #6149CD;
+}
+.logo-image2{
+    margin-left: 1rem;
+    width: 2.813rem;
+height: 2.813rem;
+}
+
+.image{
+    background-position: center;
+}
+
+.new-user-text{
+    font-size:0.875rem ;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #7A86A1;
+}
+
+.create-account{
+    font-weight: 500;
+}
+
+.term-condition-text{
+    color: #6149CD;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+opacity: 1;
+}
+
+.uppertext{
+    position: relative;
+    left: 900px;
+    bottom: 590px;
+}
+
+.work-with-us{
+    font-weight: 700;
+    font-size:30px ; 
+    letter-spacing: -0.75px;
+color: #000000;
+opacity: 1;
+}
+
+.below-work-with-us-text{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+color: #7A86A1;
+opacity: 1;
+}
+
+

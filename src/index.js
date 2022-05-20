@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import SignIn from './component/SignIn';
+import Signup from './component/Signup';
+import Chart from './component/Chart';
+// import Test from './component/Test'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <Test /> */}
+    {/* < SignIn /> */}
+    {/* <Signup></Signup> */}
+    <Chart></Chart>
+
   </React.StrictMode>
 );
 
