@@ -3,24 +3,25 @@ import "../App.css";
 import { SidebarData } from './SidebarData';
 import LogoImageDark from '../images/logo_main.svg';
 import settingicon from '../images/setting_icon.svg';
+import logouticon from '../images/logout_icon.svg';
 import YourImageHere from '../images/your_image_here-1.png';
 
 
-// console.log(SidebarData);
-
 
 function Sidebar() {
-    const [activeIcons , setActiveIcons] = useState();
-
-    function changeIcon(e,val) {
-        e.preventDefault();
-        // console.log('ssss'+active);
-        setActiveIcons(val.active_icon.type)
-        // window.location.pathname = val.link
-        
-    }    
+    // const [activeIcons, setActiveIcons] = useState();
 
 
+    // function changeIcon(e, val) {
+    //     console.log(val, "sdfds");
+
+    //     console.log('ssss' + active);
+    //     setActiveIcons(SidebarData)
+    //     window.location.pathname = val.link
+
+    //     console.log(activeIcons, "ajjay");
+    // }
+    const [isHovering, setIsHovering] = useState();
 
     return (
         <>
@@ -28,43 +29,53 @@ function Sidebar() {
                 <img className='logo-image-dark m-3 mb-4' src={LogoImageDark} alt="logo-img" />
                 <ul className='SidebarList'>
                     {SidebarData.map((val, key) => {
+                        const handleMouseEnter = () => {
+                            setIsHovering(val.active_icon.type);
+                        };
+                        const handleMouseLeave = () => {
+                            setIsHovering(val.icon.type);
+                        };
+
                         return (
+
                             <li
                                 key={key}
                                 className="row"
-                                id={window.location.pathname == val.link ? "active" : ""}
+                                id={window.location.pathname === val.link ? "active" : ""}
                                 onClick={(e) => {
-                                    changeIcon(e,val);
+                                    e.preventDefault()
+                                    // changeIcon(e,val.link);
+                                    // window.location.pathname = val.link
+
                                 }}
+                                onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
 
                             >
-                                <div id='icon'><img src={(activeIcons == val.active_icon.type ? activeIcons : val.icon.type )} alt="" /> {val.title}</div>
-                                {/* <div>{val.icon}</div> */}
-                                {/* <div>{val.title}</div> */}
+                                <div id='icon'><img
+                                    src={isHovering === val.active_icon.type || window.location.pathname === val.link ? (val.active_icon.type) : (val.icon.type)} alt="" /> {val.title}</div>
+
                             </li>
                         );
                     })
 
                     }
                 </ul>
-                
+
                 <div className="row">
-                <div className='SDashboardIconActiveidebarEnd'>
-                    <div> 
-                        <img src={YourImageHere} alt="" />
+                    <div className='SidebarEnd'>
+                        <div className='SidebarEnd1'>
+                            <img src={YourImageHere} alt="" />
+                        </div>
+                        <div className='mx-3'>
+                            <img src={settingicon} alt="" />
+                        </div>
+                        <div>
+                            <img src={logouticon} alt="" />
+                        </div>
                     </div>
-                    <div>
-                        <img src={settingicon} alt="" />
-                    </div>
+                    
                 </div>
-
-                </div>
-
-                
-
-
             </div>
-
         </>
     )
 }

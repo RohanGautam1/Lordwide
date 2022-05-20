@@ -10,7 +10,7 @@ import DashboardIconActive from '../images/dashboard_icon_active.svg';
 import MenuIconActive from '../images/menu_icon_active.svg';
 import StatementIconActive from '../images/statement_active.svg';
 import ReservationIconActive from '../images/reservations_icon_active.svg';
-// import OrderIconActive from '../images/orders _icon_active.svg';
+import OrderIconActive from '../images/xyz.svg';
 import NotificationIconActive from '../images/notifications_icon_active.svg';
 import ChatIconActive from '../images/chat_icon_active.svg';
 // import {FaBeer} from '  react-icons/fa';
@@ -47,7 +47,7 @@ export const SidebarData = [
         title: "Orders",
         icon: <OrdersIcon/>,
         link:"/Orders",
-        // active_icon : <OrderIconActive />
+        active_icon : <OrderIconActive />
     },
     {
         title: "Notifications",
