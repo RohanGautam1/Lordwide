@@ -13,8 +13,9 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Test /> */}
-    {/* < SignIn /> */}
+    
     {/* <Signup></Signup> */}
+    {/* <SignIn></SignIn> */}
     <Chart></Chart>
 
   </React.StrictMode>
