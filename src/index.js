@@ -11,7 +11,7 @@ import Forgot from "./component/Forgot"
 import { LineChart } from 'recharts';
 // import Sidebar from "./component/Sidebar"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Orders from './component/Orders';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,7 +29,7 @@ root.render(
     </Router> */}
 
 
-<Orders/>
+
 
 
     {/* <Test /> */}
