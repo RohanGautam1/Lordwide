@@ -13,6 +13,7 @@ function Forgot() {
       <div className="container-fluid login-container">
         <div className="row">
 
+
           <div className="col-md-6 bg-img " style={{ backgroundImage: `url(${BackgroundImage})` }}>
             <img className='logo-image' src={LogoImage} alt="logo-img" />
             <h1 className="img-txt mt-5 mb-0 ">Bring your restaurant <br /> to the next level. </h1>
@@ -31,6 +32,7 @@ function Forgot() {
               <p className="paragraph-text ml-0 pl-0">
                 Enter the email address you used when you joined and we'll send you instructions to reset your password.
               </p>
+
               <form>
 
                 <div className="form-group mb-3">
