@@ -11,9 +11,11 @@ function Forgot() {
       <div className="container-fluid  login-container">
         <div className="row">
 
+
         <div className="col-md-6 bg-img" style={{ backgroundImage:`url(${BackgroundImage})` }}>
         <h1 className='img-txt'>Bring your restaurant to the next level.</h1>
       </div>
+
 
           <div className="offset-md-1 col-md-4 login-form">
             <div className="login_form_in">
