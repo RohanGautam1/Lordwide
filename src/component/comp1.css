@@ -17,11 +17,14 @@ left: 1134px; */
     opacity: 1;
 }
 
-.fpass {
+
+.forgotpassword{
+
     /* top: 361px;
 left: 1132px; */
     /* width: 246px;
 height: 41px; */
+
     text-align: left;
     letter-spacing: -0.75px;
     color: #000000;
@@ -343,4 +346,62 @@ font-size: 14px;
     opacity: 1;
     font-size:20px ;
     font-weight: 400;
+
+text-align: left;
+letter-spacing: -0.75px;
+color: #000000;
+opacity: 1;
+}
+
+.paragraph-text{
+
+    text-align: left;
+letter-spacing: 0px;
+color: #7A86A1;
+opacity: 1;
+}
+
+
+.email-section{
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EBEBEB;
+    border-radius: 20px;
+    opacity: 1;
+    
+}
+
+.Submit-Button{
+
+background: transparent linear-gradient(90deg, #6149CD 0%, #A654AC 47%, #EA5F8B 100%) 0% 0% no-repeat padding-box;
+box-shadow: 4px 23px 57px #6149CD42;
+border-radius: 22px;
+opacity: 1;
+}
+
+.bg-img{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-txt{
+
+    margin-top: 185px;
+    margin-left: 166px;
+    margin-width: 619px;
+    margin-height: 210px;
+    /* UI Properties */
+    text-align: left;
+    letter-spacing: -0.6px;
+    color: #FFFFFF;
+    opacity: 1;
+
 }
