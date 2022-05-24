@@ -10,7 +10,7 @@ function Forgot() {
         <div className="row">
         
           <div className="col-md-6 welcome_auth">
-            {/* <img src="./images/bg-img.jpeg" alt="" srcset="" /> */}
+            <img src="./images/bg-img.jpeg" alt="" srcset="" />
           </div>
 
           <div className="offset-md-1 col-md-4 login-form">

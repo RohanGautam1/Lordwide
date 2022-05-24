@@ -3,7 +3,7 @@ import './comp1.css';
 import BackgroundImage from "../assets/signin_background.svg";
 import LogoImage2 from "../assets/button more.svg";
 import LogoImage from "../assets/logo.svg"
-
+import { Link } from 'react-router-dom';
 
 // AiOutlineLeft
 
@@ -21,7 +21,7 @@ const SignIn = () => {
           <div className='col-md-6'>
 
           <div className='p-4' >
-            <p className= " new-user-text text-end text-decoration-none pr-0">New User? <a className="create-account text-decoration-none a-color "href="https://www.google.com">Create an Account</a>
+            <p className= " new-user-text text-end text-decoration-none pr-0">New User? <Link className="create-account text-decoration-none a-color " to="/Signup">Create an Account</Link>
             <img className='logo-image2' src={LogoImage2} alt="logo-img" /></p>
           </div>
 
@@ -63,7 +63,7 @@ const SignIn = () => {
                     <label class="form-check-label rememberme-text " for="form2Example3">
                       Remember me
                     </label>
-                    <a href="#!" className=" forgot-password-text">Forgot password?</a>
+                    <Link to="/Forgot" className=" forgot-password-text">Forgot password?</Link>
                   </div>
 
                 </div>

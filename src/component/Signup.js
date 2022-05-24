@@ -1,8 +1,9 @@
 import React from 'react'
 import './comp1.css';
-import BackgroundImage from "../assets/signin_background.svg";
+import BackgroundImage from "../assets/signup_background.svg";
 import LogoImage2 from "../assets/button more.svg";
 import LogoImage from "../assets/logo.svg"
+import { Link } from 'react-router-dom';
 
 
 // AiOutlineLeft
@@ -20,15 +21,15 @@ const Signup = () => {
 
 
                     {/* signup field */}
-                    <div className='col-md-6 d-flex align-items-center d-flex flex-wrap'>
+                    <div className='col-md-4 offset-md-1  d-flex align-items-center d-flex flex-wrap'>
 
                         <div className='position-absolute top-0 end-0'>
-                            <p className="  new-user-text text-end text-decoration-none pr-0">New User? <a className="create-account text-decoration-none a-color " href="https://www.google.com">Create an Account</a>
+                            <p className="  new-user-text text-end text-decoration-none pr-0">Already a member? <Link className="create-account text-decoration-none a-color " to="/SignIn">Sign In</Link>
                                 <img className='logo-image2' src={LogoImage2} alt="logo-img" /></p>
 
                         </div>
 
-                        <div className='col-md-4 offset-md-1 login_form_in login-form d-flex justify-content-center d-flex flex-column '>
+                        <div className='  login_form_in login-form d-flex justify-content-center d-flex flex-column '>
 
 
 
@@ -53,7 +54,7 @@ const Signup = () => {
                                         <div class="form-outline ">
                                             <label className="form-label password-text" for="form3Example4">Restaurant Name</label>
 
-                                            <input type="text" id="form3Example4" class="form-control form-control-lg ml-4 rounded-pill password-field" placeholder="moontheme" />
+                                            <input type="text" id="form3Example4" class="form-control form-control-lg ml-4 rounded-pill password-field " placeholder="moontheme" />
                                         </div>
                                     </div>
 
@@ -80,24 +81,24 @@ const Signup = () => {
 
 
 
-                                <div class="d-flex justify-content-between align-items-center">
+                                {/* <div class="d-flex justify-content-between align-items-center"> */}
 
 
 
-                                    {/* Checkbox  */}
+                                {/* Checkbox  */}
 
-                                    <div class="form-check rememberme-div mt-1 mb-0">
-                                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                                        <label class="form-check-label rememberme-text " for="form2Example3">
-                                            I accept the &nbsp;
-                                        </label>
-                                        <a href="#!" className="term-condition-text">Terms and Conditions</a>
-                                    </div>
-
+                                <div class="form-check rememberme-div mt-1 mb-0">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                    <label class="form-check-label rememberme-text " for="form2Example3">
+                                        I accept the &nbsp;
+                                    </label>
+                                    <a href="#!" className="term-condition-text">Terms and Conditions</a>
                                 </div>
 
+                                {/* </div> */}
+
                                 <div class=" text-lg-start mt-3 pt-2">
-                                    <button type="button" className='signin-button  btn  btn-lg btn-block mb-4 Submit-Button border-0' >Sign in</button>
+                                    <button type="button" className='signin-button  btn  btn-lg btn-block mb-4 Submit-Button border-0' >Send</button>
 
                                 </div>
 
