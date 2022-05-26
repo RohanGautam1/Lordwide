@@ -4,6 +4,7 @@ import { AiOutlineLeft } from "react-icons/ai";
 import BackgroundImage from '../images/big-image.png';
 import LogoImage from '../images/logo.svg';
 import LogoImage2 from '../images/button-more.svg';
+import { Link } from 'react-router-dom';
 
 // AiOutlineLeft
 
@@ -23,13 +24,13 @@ function Forgot() {
           <div className="col-md-6">
 
           <div className='p-4' >
-            <p className= "text-end text-decoration-none pr-0">New User? <a className="text-decoration-none a-color "href="https://www.google.com">Create an Account</a>
+            <p className= "text-end text-decoration-none pr-0 new-user-para">New User? <Link className="text-decoration-none a-color "to="/Signup">Create an Account</Link>
             <img className='logo-image2' src={LogoImage2} alt="logo-img" /></p>
           </div>
 
-            <div className="col-md-6 offset-md-3 login_form_in login-form">
+            <div className="col-md-6 offset-md-3 forgot-login-form ">
               <h1 className="auth_title forget-pass">Forgot password?</h1>
-              <p className="paragraph-text ml-0 pl-0">
+              <p className="paragraph-text">
                 Enter the email address you used when you joined and we'll send you instructions to reset your password.
               </p>
 
@@ -43,7 +44,7 @@ function Forgot() {
                   <button type="button" className="btn btn-primary btn-lg btn-block w-100 Submit-Button border-0">Submit</button>
                 </div>
                 <div className="form-group other_auth_links mt-3">
-                  <a className="text-decoration-none a-color" href="https://procraft.studio"> <AiOutlineLeft /> Back to sign in </a>
+                  <Link className="text-decoration-none a-color" to="/SignIn"> <AiOutlineLeft /> Back to sign in </Link>
                 </div>
               </form>
             </div>

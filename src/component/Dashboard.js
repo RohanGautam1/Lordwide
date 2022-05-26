@@ -70,9 +70,9 @@ function Dashboard() {
                 <div className='col-md-6 text-center mt-5'><img  src={ordersinprog} alt="logo-img" /></div> 
                 </div>
                 </div>
-                <div className="col-md-3 mt-3 border border-primary ">
+                {/* <div className="col-md-3 mt-3 border border-primary ">
                     <h1>Right SideBar</h1>
-                </div>
+                </div> */}
             </div>
         </>
   )

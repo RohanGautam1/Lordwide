@@ -9,19 +9,19 @@ function Orders() {
 
     return (
         <>
-                      
+
             <div className=" mt-1 d-flex flex-wrap">
                 <div className="col-md-2">
-                <Sidebar/>
+                    <Sidebar />
                 </div>
                 <div className="col-md-7 d-flex flex-column flex-wrap ">
                     <div className="orders-row-1 ">
 
-                    {/* _________________Navbar__________________ */}
+                        {/* _________________Navbar__________________ */}
 
                         <nav className="navbar navbar-light  ">
                             <div className="container-fluid">
-                                <div className="d-flex flex-column "> <p className="orders-font">Orders</p>
+                                <div className="d-flex flex-column "> <h1>Orders</h1>
                                     <p className="hello-pizzeria mt-0">Hello Pizzeria Italiana, welcome back</p>
                                     <span className="d-flex justify-content-center align-items-center below-one-order mt-4" >Orders</span>
 
@@ -32,14 +32,14 @@ function Orders() {
                                 </form>
                             </div>
                         </nav>
-                    {/* _________________Navbar Ends__________________ */}
+                        {/* _________________Navbar Ends__________________ */}
 
                     </div>
                     <div className=" orders-row-2 ">
                         <div className="ml-4 mt-4"><p className="ongoing-orders"> 4 Ongoing Orders</p></div>
                         <div className="">
                             <div className="m-4 d-flex flex-wrap">
-                            
+
                                 <div className="card m-2 card-set ">
                                     <div className="card-body d-flex align-items-center flex-column">
                                         <div className="d-flex justify-content-center"> <button type="button " className="btn rounded-pill tablebutton mt-1">Table 6</button></div>

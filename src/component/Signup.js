@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Signup = () => {
     return (
         <>
-            <div className='container-fluid overflow-hidden' >
+            <div className='container-fluid login-container' >
                 <div className='row' >
 
                     <div className="image col-md-6 bg-img " style={{ backgroundImage: `url(${BackgroundImage})` }}>
@@ -21,15 +21,16 @@ const Signup = () => {
 
 
                     {/* signup field */}
-                    <div className='col-md-4 offset-md-1  d-flex align-items-center d-flex flex-wrap'>
+                    <div className='signup-field col-md-6'>
 
-                        <div className='position-absolute top-0 end-0'>
-                            <p className="  new-user-text text-end text-decoration-none pr-0">Already a member? <Link className="create-account text-decoration-none a-color " to="/SignIn">Sign In</Link>
+                        <div className='p-4'>
+                            <p className=" new-user-text text-end text-decoration-none pr-0">Already a member? <Link className="create-account text-decoration-none a-color " to="/SignIn">Sign In</Link>
                                 <img className='logo-image2' src={LogoImage2} alt="logo-img" /></p>
 
                         </div>
+                        
 
-                        <div className='  login_form_in login-form d-flex justify-content-center d-flex flex-column '>
+                        <div className='Sign-up-form justify-content-center d-flex flex-column '>
 
 
 
@@ -98,7 +99,7 @@ const Signup = () => {
                                 {/* </div> */}
 
                                 <div class=" text-lg-start mt-3 pt-2">
-                                    <button type="button" className='signin-button  btn  btn-lg btn-block mb-4 Submit-Button border-0' >Send</button>
+                                    <button type="button" className='signup-button  btn  btn-lg btn-block mb-4 Submit-Button border-0' >Send</button>
 
                                 </div>
 

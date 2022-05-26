@@ -16,7 +16,8 @@ export const SidebarData1 = [
         title: "Dashboard",
         icon: <DashboardIcon/>,
         link:"/Dashboard",
-        active_icon : <DashboardIconActive />
+        active_icon : <DashboardIconActive />,
+        
     },
     {
         title: "Menu",
