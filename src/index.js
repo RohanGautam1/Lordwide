@@ -5,42 +5,44 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SignIn from './component/SignIn';
 import Signup from './component/Signup';
-import Chartbar1 from './component/Chartbar1';
+// import Chartbar1 from './component/Chartbar1';
 // import Test from './component/Test'
 import Forgot from "./component/Forgot"
-import { LineChart } from 'recharts';
+
 // import Sidebar from "./component/Sidebar"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './component/Dashboard';
+import Orders from './component/Orders';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Router>
+    <Router>
       <Routes>
 
-<Route path='/' element={<App/>} />
-<Route path='/Signin' element={<SignIn/>} />
-<Route path="/Signup" element={<Signup/>} />
-<Route path="/Forgot" element={<Forgot/>} />
-<Route />
+        <Route path='/' element={<App />} />
+        <Route path='/Signin' element={<SignIn />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Forgot" element={<Forgot />} />
+        <Route path="/Dashboard" element={<Dashboard/>} />
+        <Route path="/Orders" element={<Orders/>} />
 
       </Routes>
-    </Router> */}
-
+    </Router>
 
 
 
 
     {/* <Test /> */}
-    
+
     {/* <Signup></Signup> */}
     {/* <SignIn></SignIn> */}
-  
+
     {/* <Forgot></Forgot> */}
     {/* <Sidebar></Sidebar> */}
-{/* <Chartbar1/> */}
-{/* <LineChart></LineChart> */}
+    {/* <Chartbar1/> */}
+    {/* <LineChart></LineChart> */}
   </React.StrictMode>
 );
 

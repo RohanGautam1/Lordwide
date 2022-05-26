@@ -5,7 +5,7 @@ import LogoImage2 from "../assets/button more.svg";
 import LogoImage from "../assets/logo.svg"
 import { Link } from 'react-router-dom';
 
-// AiOutlineLeft
+
 
 const SignIn = () => {
   return (
@@ -25,7 +25,7 @@ const SignIn = () => {
             <img className='logo-image2' src={LogoImage2} alt="logo-img" /></p>
           </div>
 
-            <div className='col-md-10 offset-md-1 login_form_in login-form mt-5'>
+            <div className='col-md-10 offset-md-1 login-form mt-5'>
 
               <div><p className='signin-font' >Sign in</p>
               
@@ -69,7 +69,7 @@ const SignIn = () => {
                 </div>
 
                 <div class=" text-lg-start mt-3 pt-2">
-                  <button type="button" className='signin-button  btn  btn-lg btn-block mb-4 Submit-Button border-0' >Sign in</button>
+                  <Link to="/Dashboard"><button type="button" className='signin-button  btn  btn-lg btn-block mb-4 Submit-Button border-0' >Sign in </button></Link> 
 
                 </div>
 

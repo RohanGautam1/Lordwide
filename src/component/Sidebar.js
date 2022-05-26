@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import "../App.css";
+import "../Sidebar.css";
 import { SidebarData1 } from './SidebarData1';
 import { SidebarData2 } from './SidebarData2';
 import LogoImageDark from '../images/logo_main.svg';
 import settingicon from '../images/setting_icon.svg';
 import logouticon from '../images/logout_icon.svg';
 import YourImageHere from '../images/your_image_here-1.png';
-
+import { Link } from 'react-router-dom';
 
 
 function Sidebar() {
@@ -31,18 +31,20 @@ function Sidebar() {
                 <ul className='SidebarList'>
                     {SidebarData1.map((val, key) => {
                         const handleMouseEnter = () => {
+
                             setIsHovering(val.active_icon.type);
                         };
                         const handleMouseLeave = () => {
                             setIsHovering(val.icon.type);
                         };
-
+                        
                         return (
-
+                            
                             <li
+                            
                                 key={key}
                                 className="Sidebar-row"
-                                id={window.location.pathname === val.link ? "active" : ""}
+                                id={window.location.pathname == val.link ? "active" : ""}
                                 onClick={(e) => {
                                     e.preventDefault()
                                     // changeIcon(e,val.link);
@@ -52,8 +54,8 @@ function Sidebar() {
                                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
 
                             >
-                                <div id='icon'><img
-                                    src={isHovering === val.active_icon.type || window.location.pathname === val.link ? (val.active_icon.type) : (val.icon.type)} alt="" /> {val.title}</div>
+                                <div id='icon'className='d-flex'><img
+                                    src={isHovering === val.active_icon.type || window.location.pathname === val.link ? (val.active_icon.type) : (val.icon.type)} alt="" /> <p className='menu-text'>{val.title}</p></div>
 
                             </li>
                         );
@@ -63,35 +65,34 @@ function Sidebar() {
                 </ul>
 
                 <p className='insights'>Insights</p>
-                
+
                 <ul className='SidebarList '>
-                    {SidebarData2.map((val, key) => {
+                    {SidebarData2.map((val,index, key) => {
                         const handleMouseEnter = () => {
                             setIsHovering(val.active_icon.type);
+                        
                         };
                         const handleMouseLeave = () => {
                             setIsHovering(val.icon.type);
                         };
 
                         return (
-
+                            <Link className='hover1' to={val.link}>
                             <li
                                 key={key}
-                                className="Sidebar-row"
+                                className="Insights-Sidebar-row"
                                 id={window.location.pathname === val.link ? "active" : ""}
-                                onClick={(e) => {
-                                    e.preventDefault()
-                                    // changeIcon(e,val.link);
-                                    // window.location.pathname = val.link
 
-                                }}
                                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
 
                             >
-                                <div id='icon'><img
-                                    src={isHovering === val.active_icon.type || window.location.pathname === val.link ? (val.active_icon.type) : (val.icon.type)} alt="" /> {val.title}</div>
-
+                                <div id='icon' className='d-flex'>
+                                <img
+                                    src={isHovering === val.active_icon.type || window.location.pathname === val.link ? (val.active_icon.type) : (val.icon.type)} alt=""/> 
+                                    <p className='menu-text'>{val.title}</p>
+                                </div>
                             </li>
+                            </Link>
                         );
                     })
 
@@ -110,10 +111,10 @@ function Sidebar() {
                             <img src={logouticon} alt="" />
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
-        </>
+        </> 
     )
 }
 

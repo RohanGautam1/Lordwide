@@ -78,6 +78,7 @@ height: 41px; */
     font-size: 0.875rem;
     width: 12.688rem;
     height: 3rem;
+    margin-right: 0.5rem;
 }
 
 .password-field {
@@ -237,6 +238,25 @@ height: 41px; */
     opacity: 1;
 }
 
+.Sign-up-form{
+    /* margin-top: 2rem; */
+    margin-left: 4rem;
+}
+
+.signup-button{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-left: 0.688rem;
+    font-weight: 700;
+    width: 12.688rem;
+    height: 3rem;
+}
+.signup-button:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* ============================================================================================================================== */
 /* =======================================================Orders Page=============================================== */
 .tablebutton{
@@ -386,22 +406,28 @@ opacity: 1;
   background-size: cover;
   height: 100vh;
 }
-.login-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .img-txt{
 
     margin-top: 185px;
     margin-left: 166px;
-    margin-width: 619px;
-    margin-height: 210px;
+    /* width: 619px;
+    height: 210px; */
     /* UI Properties */
     text-align: left;
     letter-spacing: -0.6px;
     color: #FFFFFF;
     opacity: 1;
+    text-decoration: none;
 
+}
+
+/* .signin-button a {
+    text-decoration: none;
+    color: #fff;
+} */
+
+.signin-button:hover{
+    text-decoration: none;
+    color: #fff;
 }
