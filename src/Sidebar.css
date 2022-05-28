@@ -8,7 +8,9 @@
     width: 12.3rem;
     background-color: #FFFFFF ;
     border-right: 1px solid #EBEBEB;
-    position: fixed;
+    /* position: fixed; */
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .SidebarList{
     height: auto;
