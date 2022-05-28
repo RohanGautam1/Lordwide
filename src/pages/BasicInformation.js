@@ -6,7 +6,7 @@ import NewNav from '../component/NewNav';
 // import Navbar from '../component/Navbar';
 
 
-import MySidebar from "../component/MySidebar";
+// import MySidebar from "../component/MySidebar";
 // import satisfactionbg from '../images/satisfaction_bg.svg';
 import { Badge } from "@material-ui/core";
 import Bg from "../images/your image here.png";
@@ -15,6 +15,9 @@ import ImgSvg from  "../images/image.svg"
 import Page11and12Left from '../component/Page11and12Left';
 import MyForm from "../component/MyForm";
 import MyForm2 from '../component/MyForm2';
+import Sidebar from '../component/Sidebar';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -28,7 +31,7 @@ function BasicInformation() {
         
             <div className="container-fluid d-flex ">
                 <div className="col-md-2">
-                    <MySidebar/>
+                    <Sidebar></Sidebar>
                 </div>
                 <div className="col-md-7">
                    <NewNav/>
@@ -75,7 +78,7 @@ function BasicInformation() {
                         fill="#7a86a1"
                       />
                     </svg>
-                    <p className=" my-password">Password</p>
+                    <Link className='text-decoration-none' to="/resetpassword" > <p className=" my-password">Password</p> </Link>
                   </div>
                 </div>
               </div>

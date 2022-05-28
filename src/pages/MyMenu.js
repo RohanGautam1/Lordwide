@@ -1,9 +1,10 @@
 import React from 'react';
-import NewNav from '../component/NewNav';
+// import NewNav from '../component/NewNav';
 // import Navbar from '../component/Navbar';
-import MySidebar from "../component/MySidebar";
+import Sidebar from "../component/Sidebar";
 import RightsideComponent from '../component/RightsideComponent';
 import MenuImage from "../images/menu image.png";
+import SearchIcon from '../images/search_icon.svg';
 
 import menuItems from "../data";
 import "./menu.css";
@@ -13,11 +14,24 @@ const MyMenu = () => {
 
             <div className=" d-flex " >
                 <div className="col-md-2">
-                <MySidebar/>
+                <Sidebar/>
                 </div>
                 <div className="col-md-7   " style = {{backgroundColor:"white" , color: "white" }}>
-                  <NewNav/>
-                   {/*<Navbar/>*/}
+                <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent mb-5">
+                <div className="main-heading d-flex flex-column">
+                    <h3 className='mb-0'>Menu</h3>
+                    <small class="text-muted">Hello Pizzeria Italiana, welcome back</small>
+                </div>
+
+
+                <div class="" id="navbarSupportedContent">
+                    <div className="searchbox">
+                        {/* <span><i class="fa fa-search" aria-hidden="true"></i></span> */}
+                        <span><img src={SearchIcon} alt="" srcset="" /></span>
+                        <input class="form-control" type="text" placeholder="Search everything ..." aria-label="Search" />
+                    </div>
+                </div>
+            </nav>
                    <div className = "row">
                      <div className='col-12 pink-img' style={{ backgroundColor: "#F773B7",width:"70px",height:"70px",marginLeft:"30px",borderRadius:"18px",opacity:"0.5"}}>
                      <img src = {MenuImage}  className = "menu-logo" style = {{ opacity:"1",marginTop:"8px"}}  /> 

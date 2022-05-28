@@ -1,6 +1,5 @@
 import React from 'react'
 import Sidebar from './Sidebar'
-import '../App.css';
 import '../Statement.css';
 import StatementTable from './StatementTable';
 import Navbar from './Navbar';
@@ -21,39 +20,33 @@ function Statement() {
                     <div className="row g-0">
                         <Navbar />
                     </div>
-                    <div className="row g-0 border">
-                        <div className="earning-report col-md-9 border">
-                          <img className='mt-1' src={statementschart} alt="logo-img" />
+                    <div className="row g-0">
+                        <div className="earning-report col-md-9">
+                            <img className='mt-1' src={statementschart} alt="logo-img" />
 
                         </div>
-                        <div className=" col-md-3 border update-your-rprt">
-                        <div className='d-flex justify-content-center   '>
-                                <div className="card chat-Satisfaction update-your-rprt-card">
-                                    <div className='circle-chart'>
-                                        <img className='mt-1' src={LogoImage2} alt="logo-img" />
-                                        <img className='icon-more' src={iconmore} alt="logo-img" />
-                                    </div>
-                                    <div className='d-flex flex-wrap'>
-                                        <div className="txt">
-                                            <h3>85%</h3>
-                                            <h5>Satisfaction</h5>
+                        <div className=" col-md-3 update-your-rprt">
+                            <div className='d-flex justify-content-center   '>
+                                <div className="card update-your-rprt-card">
+                                    
+                                    <div className='d-flex flex-wrap justify-content-center'>
+                                        <div className="update-your-rprt-card-text p-1 mt-3">
+                                            <h5>Update Your report Earning this month</h5>
                                         </div>
-                                        <div className="clip1">
-                                        </div>
+                                        
                                     </div>
+                                    <p className='update-your-rprt-card-button'>Update</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="row g-0 p-3">
-                    <StatementTable/>
-                    </div>
-
-
-                </div>
-                <div className="col-md-3 border border-primary ">
                     
+                    <div className="tableBox p-5">
+                        <StatementTable />
+                    </div>
                 </div>
+                {/* <div className="col-md-3 border border-primary "> */}
+                {/* </div> */}
             </div>
 
         </>
