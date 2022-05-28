@@ -13,9 +13,11 @@ import Forgot from "./component/Forgot"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './component/Dashboard';
 import Orders from './component/Orders';
+
 import MyMenu from './pages/MyMenu';
 import ResetPassword from './pages/ResetPassword';
 import BasicInformation from './pages/BasicInformation';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
