@@ -17,6 +17,7 @@ import Orders from './component/Orders';
 import MyMenu from './pages/MyMenu';
 import ResetPassword from './pages/ResetPassword';
 import BasicInformation from './pages/BasicInformation';
+import Statement from './component/Statement';
 
 
 
@@ -35,6 +36,7 @@ root.render(
         <Route path="/menu" element={<MyMenu/>} />
         <Route path="/resetpassword" element={<ResetPassword/>} />
         <Route path="/userdetails" element={<BasicInformation/>} />
+        <Route path="/Statement" element={<Statement/>} />
 
       </Routes>
     </Router>

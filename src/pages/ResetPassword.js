@@ -5,7 +5,7 @@ import '../App.css';
 import NewNav from '../component/NewNav';
 // import Navbar from '../component/Navbar';
 
-import MySidebar from "../component/MySidebar";
+import Sidebar from "../component/Sidebar";
 // import satisfactionbg from '../images/satisfaction_bg.svg';
 import { Badge } from "@material-ui/core";
 import Bg from "../images/your image here.png";
@@ -24,9 +24,9 @@ function ResetPassword() {
 
     return (
         
-            <div className="container-fluid d-flex ">
+            <div className="container-fluid d-flex g-0">
                 <div className="col-md-2">
-                    <MySidebar/>
+                    <Sidebar/>
                 </div>
                 <div className="col-md-7">
                 {<NewNav/>}

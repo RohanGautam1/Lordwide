@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "../StatementTable.css"
+import "../StatementTable.css"
 import deleteicon from "../assets/icon_delete.svg"
 import downloadicon from "../assets/icon_dowload.svg"
 
@@ -9,7 +9,7 @@ const StatementTable = () => {
 
         {
 
-            
+
             date: "18-Apr-2021",
             project: "#345623",
             amount: "$330",
@@ -78,66 +78,51 @@ const StatementTable = () => {
                 <div className="row">
                     <div className="d-flex justify-content-between">
                         <div className="update-your-information-text">Update Your index information in Setting</div>
-                        <div className="d-flex justify-content-center"><div className="statement-delete-icon  d-flex justify-content-center align-items-center mr-4"><img src={deleteicon} /></div> <div className="statement-download-icon d-flex justify-content-center align-items-center mr-4"><img src={downloadicon} /></div></div>
+                        <div className="d-flex justify-content-center"><div className="statement-delete-icon  d-flex justify-content-center align-items-center me-4"><img src={deleteicon} /></div> <div className="statement-download-icon d-flex justify-content-center align-items-center me-4"><img src={downloadicon} /></div></div>
                     </div>
                 </div>
 
-              <div className="row ">
-                <table class="table borderless">
-                    <thead>
-                        <tr>
-                        <th><input type="checkbox" /></th>
+                <div className="row ">
+                    <table class="table borderless">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" /></th>
                                 <th>Date</th>
                                 <th>Project ID</th>
                                 <th>Amount</th>
                                 <th>Tax</th>
                                 <th>Payment Method</th>
                                 <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                       {
+                            {
 
-                            data.map((val, index) => {
+                                data.map((val, index) => {
 
-                                return (
+                                    return (
 
-                                    <>
-                                        <tr>
-                                            <td><input type="checkbox" /></td>
+                                        <>
+                                            <tr>
+                                                <td><input type="checkbox" /></td>
 
-                                            <td className="date-and-projectid-elements">{val.date}</td>
-                                            <td>{val.project}</td>
-                                            <td>{val.amount}</td>
-                                            <td className="tax-text">{val.tax}</td>
-                                            <td>{val.payment}</td>
-                                            <td ><p className={val.status === "Paid" ? "paid-text" : "cash-text"}>{val.status}</p></td>
-
-
-                                        </tr>
-
-                                    </>
-
-                                );
-                            })
-
-                        } 
-
-
-
-                    </tbody>
-                </table>
-</div>
-
-
-
-
-
+                                                <td className="date-and-projectid-elements">{val.date}</td>
+                                                <td>{val.project}</td>
+                                                <td>{val.amount}</td>
+                                                <td className="tax-text">{val.tax}</td>
+                                                <td>{val.payment}</td>
+                                                <td ><p className={val.status === "Paid" ? "paid-text" : "cash-text"}>{val.status}</p></td>
+                                            </tr>
+                                        </>
+                                    );
+                                })
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </>
-
-
     );
 
 }

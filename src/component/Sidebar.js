@@ -27,18 +27,18 @@ function Sidebar() {
                         };  
                         
                         return (
-                            
+                            <Link className='hover1' to={val.link}>
                             <li
                             
                                 key={key}
                                 className="Sidebar-row"
                                 id={window.location.pathname === val.link ? "active" : ""}
-                                onClick={(e) => {
-                                    e.preventDefault()
-                                    // changeIcon(e,val.link);
-                                    // window.location.pathname = val.link
+                                // onClick={(e) => {
+                                //     e.preventDefault()
+                                //     // changeIcon(e,val.link);
+                                //     // window.location.pathname = val.link
 
-                                }}
+                                // }}
                                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
 
                             >
@@ -46,6 +46,7 @@ function Sidebar() {
                                     src={isHovering === val.active_icon.type || window.location.pathname === val.link ? (val.active_icon.type) : (val.icon.type)} alt="" /> <p className='menu-text'>{val.title}</p></div>
 
                             </li>
+                            </Link>
                         );
                     })
 
@@ -90,7 +91,7 @@ function Sidebar() {
                 <div className="SideBarEndrow" style = {{marginTop:"12px"}}>
                     <div className='SidebarEnd'>
                         <div className='SidebarEnd1'>
-                            <img src={YourImageHere} alt="" />
+<Link to="/userdetails" ><img src={YourImageHere} alt="" /></Link> 
                         </div>
                         <div className='mx-3'>
                             <img src={settingicon} alt="" />
