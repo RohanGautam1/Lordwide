@@ -1,11 +1,19 @@
 import './App.css';
 
-import Orders from './component/Orders';
+// import Orders from './component/Orders';
 // import Sidebar from './component/Sidebar';
-import Forgot from './component/Forgot';
+// import Forgot from './component/Forgot';
+
+
 import Signup from './component/Signup';
+
 // import Dashboard from './component/Dashboard';
 // import Changepass from './component/Changepass';
+// import Setting from './pages/Setting';
+// import SettingPage2 from './pages/SettingPage2';
+import ResetPassword from "./pages/ResetPassword";
+import BasicInformation from "./pages/BasicInformation";
+import MyMenu from "./pages/MyMenu";
 
 
 function App() {
@@ -13,11 +21,21 @@ function App() {
     <>
 
     <div className="App">
-       <Signup/>
+
+      {/*<Signup/>*/}
+
       {/* <Sidebar/> */}
       {/* <Dashboard/> */}
       {/* <Changepass/> */}
       {/* <Orders/> */}
+
+        {/*<Setting/>*/}
+         {/*<SettingPage2/>*/}
+         {/*<Menu/>*/}
+        {/*<ResetPassword/>*/}
+         {/*<BasicInformation/>*/}
+         {<MyMenu/>}
+
 
       </div>
     </>

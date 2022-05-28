@@ -10,23 +10,11 @@ import { Link } from 'react-router-dom';
 
 
 function Sidebar() {
-    // const [activeIcons, setActiveIcons] = useState();
-
-
-    // function changeIcon(e, val) {
-    //     console.log(val, "sdfds");
-
-    //     console.log('ssss' + active);
-    //     setActiveIcons(SidebarData1)
-    //     window.location.pathname = val.link
-
-    //     console.log(activeIcons, "ajjay");
-    // }
     const [isHovering, setIsHovering] = useState();
 
     return (
         <>
-            <div className="Sidebar">
+            <div className="Sidebar" style = {{height: "110vh"}}>
                 <img className='logo-image-dark m-3 mb-4' src={LogoImageDark} alt="logo-img" />
                 <ul className='SidebarList'>
                     {SidebarData1.map((val, key) => {
@@ -36,7 +24,7 @@ function Sidebar() {
                         };
                         const handleMouseLeave = () => {
                             setIsHovering(val.icon.type);
-                        };
+                        };  
                         
                         return (
                             
@@ -44,7 +32,7 @@ function Sidebar() {
                             
                                 key={key}
                                 className="Sidebar-row"
-                                id={window.location.pathname == val.link ? "active" : ""}
+                                id={window.location.pathname === val.link ? "active" : ""}
                                 onClick={(e) => {
                                     e.preventDefault()
                                     // changeIcon(e,val.link);
@@ -66,7 +54,7 @@ function Sidebar() {
 
                 <p className='insights'>Insights</p>
 
-                <ul className='SidebarList '>
+                <ul className='Insights-SidebarList '>
                     {SidebarData2.map((val,index, key) => {
                         const handleMouseEnter = () => {
                             setIsHovering(val.active_icon.type);
@@ -99,7 +87,7 @@ function Sidebar() {
                     }
                 </ul>
 
-                <div className="SideBarEndrow">
+                <div className="SideBarEndrow" style = {{marginTop:"12px"}}>
                     <div className='SidebarEnd'>
                         <div className='SidebarEnd1'>
                             <img src={YourImageHere} alt="" />

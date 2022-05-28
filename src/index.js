@@ -14,6 +14,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './component/Dashboard';
 import Orders from './component/Orders';
 
+import MyMenu from './pages/MyMenu';
+import ResetPassword from './pages/ResetPassword';
+import BasicInformation from './pages/BasicInformation';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +32,9 @@ root.render(
         <Route path="/Forgot" element={<Forgot />} />
         <Route path="/Dashboard" element={<Dashboard/>} />
         <Route path="/Orders" element={<Orders/>} />
+        <Route path="/menu" element={<MyMenu/>} />
+        <Route path="/resetpassword" element={<ResetPassword/>} />
+        <Route path="/userdetails" element={<BasicInformation/>} />
 
       </Routes>
     </Router>
