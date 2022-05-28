@@ -1,4 +1,12 @@
 
+html, body {
+  /* max-width: 100%; */
+  overflow-x: hidden;
+ 
+}
+.setting-container-page{
+  overflow-x: hidden; 
+}
 
 .App{
   width: 100vw;
@@ -282,7 +290,7 @@ td.Payment-mode{
     text-align: center;
     border-radius: 10px;
     border: 0.5px solid #7a86a1;
-    padding: 8px;
+    /* padding: 8px; */
     cursor: pointer;
   }
   
@@ -291,6 +299,7 @@ td.Payment-mode{
     color: #6149cd;
     font-size: 15px;
     font-family: "Manrope", sans-serif;
+    text-align: center;
   }
   
   .my-password {
@@ -320,10 +329,11 @@ td.Payment-mode{
   .info-container,
   .password-container {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;
     text-align: center;
     margin-bottom: 0px;
+    margin-left:20px;
 
   }
 /*   
@@ -335,7 +345,7 @@ td.Payment-mode{
     height: 40vh;
    
 
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     margin-top: 0px;
     border-radius: 10px;
     display: flex;
@@ -648,6 +658,9 @@ font-size: 14px;
   opacity: 1;
   font-size:20px ;
   font-weight: 400;
+}
+.sidebar-container{
+  position:fixed;
 }
 
 
