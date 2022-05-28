@@ -82,11 +82,13 @@ function Dashboard() {
                         </div>
                     </div>
                     <div className="row d-flex flex-wrap">
-                        <div className='col-md-6 text-center mt-5'><img src={scans} alt="logo-img" /></div>
+                        <div className='col-md-4 text-center mt-5'>
+                        <img src={scans} alt="logo-img" />
+                        </div>
 
 
                        
-                        <div className='col-md-6 mt-5 Order-in-Progress border p-2 g-0'>
+                        <div className='col-md-8 mt-5 Order-in-Progress border p-2 g-0'>
                             <div className="heading d-flex justify-content-between">
                                 <h6>Orders in progress</h6>
                                 <img className='icon-more' src={iconmore} alt="logo-img" />
