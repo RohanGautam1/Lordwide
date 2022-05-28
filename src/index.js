@@ -13,6 +13,7 @@ import Forgot from "./component/Forgot"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './component/Dashboard';
 import Orders from './component/Orders';
+import Statement from './component/Statement';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +28,7 @@ root.render(
         <Route path="/Forgot" element={<Forgot />} />
         <Route path="/Dashboard" element={<Dashboard/>} />
         <Route path="/Orders" element={<Orders/>} />
+        <Route path="/Statement" element={<Statement/>} />
 
       </Routes>
     </Router>
