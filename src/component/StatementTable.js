@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../StatementTable.css"
+// import "../StatementTable.css"
 import deleteicon from "../assets/icon_delete.svg"
 import downloadicon from "../assets/icon_dowload.svg"
 
