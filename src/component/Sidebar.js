@@ -14,7 +14,7 @@ function Sidebar() {
 
     return (
         <>
-            <div className="Sidebar">
+            <div className="Sidebar" style = {{height: "110vh"}}>
                 <img className='logo-image-dark m-3 mb-4' src={LogoImageDark} alt="logo-img" />
                 <ul className='SidebarList'>
                     {SidebarData1.map((val, key) => {
@@ -87,7 +87,7 @@ function Sidebar() {
                     }
                 </ul>
 
-                <div className="SideBarEndrow">
+                <div className="SideBarEndrow" style = {{marginTop:"12px"}}>
                     <div className='SidebarEnd'>
                         <div className='SidebarEnd1'>
                             <img src={YourImageHere} alt="" />
