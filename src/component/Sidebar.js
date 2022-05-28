@@ -10,18 +10,6 @@ import { Link } from 'react-router-dom';
 
 
 function Sidebar() {
-    // const [activeIcons, setActiveIcons] = useState();
-
-
-    // function changeIcon(e, val) {
-    //     console.log(val, "sdfds");
-
-    //     console.log('ssss' + active);
-    //     setActiveIcons(SidebarData1)
-    //     window.location.pathname = val.link
-
-    //     console.log(activeIcons, "ajjay");
-    // }
     const [isHovering, setIsHovering] = useState();
 
     return (
@@ -36,7 +24,7 @@ function Sidebar() {
                         };
                         const handleMouseLeave = () => {
                             setIsHovering(val.icon.type);
-                        };
+                        };  
                         
                         return (
                             
@@ -44,7 +32,7 @@ function Sidebar() {
                             
                                 key={key}
                                 className="Sidebar-row"
-                                id={window.location.pathname == val.link ? "active" : ""}
+                                id={window.location.pathname === val.link ? "active" : ""}
                                 onClick={(e) => {
                                     e.preventDefault()
                                     // changeIcon(e,val.link);
@@ -66,7 +54,7 @@ function Sidebar() {
 
                 <p className='insights'>Insights</p>
 
-                <ul className='SidebarList '>
+                <ul className='Insights-SidebarList '>
                     {SidebarData2.map((val,index, key) => {
                         const handleMouseEnter = () => {
                             setIsHovering(val.active_icon.type);
